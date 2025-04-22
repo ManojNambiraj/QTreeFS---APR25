@@ -1,0 +1,160 @@
+<!-- Positions
+
+    1. static
+    2. relative
+    3. absolute
+    4. fixed
+    5. sticky
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .bluebox {
+        width: 300px;
+        height: 300px;
+        background-color: blue;
+
+        /* position: relative;
+        top: 100px;
+        left: 200px; */
+        /* 
+        position: sticky;
+        top: 100px; */
+      }
+
+      .yellowbox {
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+
+        /* position: absolute;
+        top: 50px; */
+      }
+
+      .para {
+        background-color: aqua;
+        padding: 30px;
+
+        border: 5px solid blue;
+        /* margin-top: 100px; */
+        /* margin: 100px; */
+
+        width: 50%;
+      }
+
+      .whitebox{
+        border: 2px solid;
+        width: 50%;
+        height: 400px;
+
+      }
+
+      .whitebox > button{
+        position: absolute;
+        right: 50px;
+      }
+
+      
+      .parent{
+        display: flex;
+        flex-direction: row;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit magni culpa
+      reprehenderit consectetur inventore ipsum quae dolores, dicta autem,
+      provident molestiae mollitia aperiam? Magni, quia esse. Veritatis minima
+      delectus quia. Dicta praesentium saepe fugiat quod officia veritatis
+      libero vero, totam beatae unde repellat consectetur harum cupiditate
+      doloribus exercitationem sapiente reprehenderit eligendi modi blanditiis,
+      consequuntur repudiandae accusantium. Iusto labore nobis voluptatum!
+      Accusamus, officia? Accusantium provident quod tempore id exercitationem
+      aperiam nulla, molestiae reiciendis rerum, cumque animi error beatae
+      adipisci. Quisquam consectetur, reprehenderit modi sed totam ab molestias
+      beatae? Minima, odio ab? Odit dolorum labore aspernatur quas nobis illo
+      harum deserunt aperiam, ut maiores corrupti molestiae quam obcaecati nihil
+      maxime nostrum nesciunt blanditiis quae? Itaque temporibus alias, modi
+      eius aspernatur ex! Dicta! Ab nesciunt nisi dolorum repellendus quidem
+      doloribus! Nostrum temporibus saepe explicabo itaque dignissimos quae
+      eligendi fuga architecto, facere atque obcaecati amet quaerat illum, nulla
+      nemo voluptatibus ea! Quasi, iusto quaerat? Odit cupiditate unde nostrum
+      ipsa explicabo quam debitis ab vitae magnam! Excepturi animi porro
+      doloremque quibusdam, repellat ullam accusantium nam, laboriosam, ipsam
+      non illum totam facilis in reprehenderit pariatur necessitatibus! Error
+      sed facere maxime corporis dolores deleniti, commodi id consequatur harum
+      excepturi velit nulla molestiae, distinctio exercitationem voluptatem
+      provident earum aut. Laborum adipisci dolorem eius sint aut veritatis ea
+      corporis? Fuga optio sint iste architecto consectetur quisquam impedit qui
+      obcaecati molestias, tempora quam libero illo tenetur ipsa nostrum dolorum
+      dolorem. Soluta commodi blanditiis inventore sit itaque, doloribus vero
+      ut? Perspiciatis. Rem a quod tempore commodi dicta quae voluptatem fugiat
+      quas est doloremque architecto sed neque, ea accusantium labore, corporis
+      mollitia praesentium suscipit. Molestias facilis itaque eaque sint
+      voluptate ratione voluptates. Hic, ad ea ipsam dolor asperiores
+      necessitatibus alias cumque voluptatibus quae suscipit eveniet nulla,
+      aspernatur repellat repudiandae non, ducimus eos exercitationem corporis.
+      Nobis dolorum officiis, esse quis natus pariatur at.
+    </p>
+
+    <div class="bluebox">
+      <div class="yellowbox"></div>
+    </div>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate
+      debitis atque, eveniet velit officiis perferendis quibusdam alias ea
+      doloremque porro vitae tempore illo quos? Delectus voluptatem nobis
+      dolorum vitae dignissimos. Dolores laudantium esse, dicta asperiores porro
+      ratione non deserunt. Perferendis, sed voluptatum, cupiditate ullam iste
+      impedit maxime laboriosam tempore quod soluta accusamus numquam asperiores
+      nesciunt reiciendis vel odio illum excepturi. Natus iusto fugiat, quia
+      iure ipsam rerum inventore ipsa. Minus provident non expedita quidem
+      cupiditate dolor, sed repellat maxime inventore dignissimos amet, hic ipsa
+      eum dolore corporis? Minus, omnis veniam. Libero rerum a et illo placeat
+      neque doloremque id vel. Obcaecati commodi et minus quisquam doloremque
+      delectus. Quibusdam obcaecati molestias ipsum, odit possimus, vel placeat
+      nulla quaerat cupiditate, suscipit laudantium. Unde iste porro, at,
+      asperiores delectus minima harum sint reprehenderit quidem dolores odio
+      ipsa magni exercitationem commodi voluptate. Atque odio sunt ad provident
+      soluta? Aut quibusdam illo cumque quisquam dolorum? Necessitatibus
+      doloremque iusto similique dolore eius facilis, perspiciatis ex
+      consectetur. A soluta enim, at, ea molestias doloribus est aperiam fugit
+      excepturi ad tenetur facere? Cupiditate debitis rerum sed totam corrupti?
+      Cupiditate quo eligendi nobis perferendis, animi quia eum? Nemo nulla
+      pariatur explicabo eveniet laborum maxime sit aliquam eius adipisci amet
+      excepturi vitae vero, sapiente ab totam repudiandae aliquid numquam
+      voluptatibus. Beatae deleniti maxime nulla optio asperiores unde nemo
+      dolor officia, vel exercitationem libero nihil, quam odit. Explicabo sit
+      totam quam beatae veniam repellendus fuga. Fuga asperiores blanditiis quia
+      facere non? Consectetur eius quas vel, quos atque ab molestias hic
+      obcaecati saepe possimus, voluptates magni sapiente quo. Harum tempore
+      doloribus reprehenderit ex atque modi ullam quidem quos id doloremque!
+      Eligendi, fugiat? Laborum ea est aliquid vel iusto, tenetur temporibus
+      consequatur illo. Distinctio iste voluptas magnam omnis quidem aspernatur
+      praesentium dolore, fuga ut neque veritatis molestias eveniet quod maxime!
+      Autem, possimus vitae.
+    </p> -->
+
+    <div class="parent">
+      <p class="para">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident nemo
+        officia labore dolorem architecto dolorum non aliquid laudantium sed
+        veritatis distinctio accusamus nobis pariatur excepturi aut incidunt,
+        dolore quas dicta?
+      </p>
+      <div class="whitebox">
+        <button>Click</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
