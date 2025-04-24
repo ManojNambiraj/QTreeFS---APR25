@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .main_container {
+        background-color: rgb(235, 220, 202);
+        width: 100vw;
+        height: 100vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .whitebox {
+        background-color: white;
+        width: 80%;
+        height: 80%;
+        border-radius: 20px;
+        padding: 20px;
+
+        display: flex;
+        flex-direction: row;
+      }
+
+      .left_container {
+        width: 250px;
+        height: 100%;
+        border: 1px solid;
+        border-radius: 20px;
+        background-color: blue;
+      }
+
+      .right_container {
+        width: 70%;
+        height: 100%;
+
+        padding: 5% 10%;
+      }
+
+      .step_numbers {
+        background-color: cornsilk;
+        border-radius: 50%;
+        height: 20px;
+        /* width: 30px; */
+        padding: 12px;
+        font-size: 1.5em;
+      }
+
+      .sections {
+        width: 80%;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      .step_content > .head1 {
+        color: darkgray;
+      }
+
+      .step_content > .head2 {
+        color: white;
+      }
+
+      .right_content_section{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .right_content_section > section > input {
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-size: larger;
+      }
+
+      .form_button{
+        width: 150px;
+        padding: 10px;
+        background: darkblue;
+        color: white;
+        font-size: 1.2em;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main_container">
+      <div class="whitebox">
+        <div class="left_container">
+          <div class="sections">
+            <span class="step_numbers">1</span>
+            <div class="step_content">
+              <p class="head1">Step 1</p>
+              <p class="head2">Your Info</p>
+            </div>
+          </div>
+          <div class="sections">
+            <span class="step_numbers">1</span>
+            <div class="step_content">
+              <p class="head1">Step 1</p>
+              <p class="head2">Your Info</p>
+            </div>
+          </div>
+          <div class="sections">
+            <span class="step_numbers">1</span>
+            <div class="step_content">
+              <p class="head1">Step 1</p>
+              <p class="head2">Your Info</p>
+            </div>
+          </div>
+          <div class="sections">
+            <span class="step_numbers">1</span>
+            <div class="step_content">
+              <p class="head1">Step 1</p>
+              <p class="head2">Your Info</p>
+            </div>
+          </div>
+        </div>
+        <div class="right_container">
+          <section class="right_header">
+            <h1>Personal Info</h1>
+            <p>Please provide your name, Email id and Phone number.</p>
+          </section>
+          <form class="right_content_section">
+            <section>
+              <label for="Username">Username</label><br />
+              <input type="text" placeholder="e.g. Stephen king" onchange="getdata(event)" />
+            </section>
+            <section>
+              <label for="Email">Email</label><br />
+              <input type="text" placeholder="e.g. Stephenking@gmail.com" onchange="getdata(event)"  />
+            </section>
+            <section>
+              <label for="Phone no.">Phone no.</label><br />
+              <input type="text" placeholder="e.g.+91 9876543212" onchange="getdata(event)"  />
+            </section>
+
+            <button class="form_button">Next Step</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
