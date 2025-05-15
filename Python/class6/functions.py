@@ -46,16 +46,16 @@
         # def demo(a, b, c):
         #     print(a, b, c)
 
-        # demo(c = 2, a = "hello", b = 10)
+        # demo(c = 2, a = 7, b = 10)
 
 # lambda functions:
 
     # Syntax:
 
-        # variable =  lambda arguments : expression
+        # variable =  lambda arguments: expression
 
     # Example:
 
-        # x = lambda a: a * 2
+        # x = lambda a, b: a * b
 
-        # print(x(5))
+        # print(x(5, 10))
