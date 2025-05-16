@@ -30,35 +30,35 @@
 
 # Class Example 2:
 
-# class Car:
-#     no_of_wheels = 0
-#     color = ""
-#     no_of_sheets = 0
-#     fuel_type = ""
+    # class Car:
+    #     no_of_wheels = 0
+    #     color = ""
+    #     no_of_sheets = 0
+    #     fuel_type = ""
 
-#     def demo(self):
-#         print(self.color)
+    #     def demo(self):
+    #         print(self.color)
 
-# i10 = Car()
+    # i10 = Car()
 
-# i10.no_of_wheels = 4
-# i10.color = "red"
+    # i10.no_of_wheels = 4
+    # i10.color = "red"
 
-# # print(i10.no_of_wheels)
-# # print(i10.color)
+    # print(i10.no_of_wheels)
+    # print(i10.color)
 
-# i10.demo()
+    # i10.demo()
 
-# print("----------------------")
+    # print("----------------------")
 
-# inova = Car()
+    # inova = Car()
 
-# inova.no_of_wheels = 5
-# inova.color = "white"
+    # inova.no_of_wheels = 5
+    # inova.color = "white"
 
-# # print(inova.no_of_wheels, inova.color)
+    # print(inova.no_of_wheels, inova.color)
 
-# # inova.demo()
+    # inova.demo()
 
 # Example 3:
 
